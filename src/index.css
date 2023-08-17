@@ -1,3 +1,13 @@
+html{
+  overflow: hidden;
+ 
+}
+.Home{
+    margin: 0 ;
+    padding-top: 2rem;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,488 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:white;
+}
+span{
+  font-size: 0.75rem
+}
+a {
+  font-size: 0.75rem;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.login{
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  height: 30rem;
+  border: 1px solid #d9d9d9;
+  margin-top: 6rem;
+  width: 50rem;
+  background-color: white;
+
+}
+
+.login .left{
+  background:url("../public/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 20rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.login .right{
+
+  height: 100%;
+  width: 30rem;
+  padding: 2rem 4rem; 
+   text-align: left!important;
+  color: #785326;
+
+}
+
+ .right p{
+  color: #a89797;
+  font-size: 0.75rem!important;
+  width: 100%;
+ }
+ .field{
+  margin-top: 0.5rem;
+ }
+ .field:first-child{
+  margin-top: 0rem;
+ }
+
+ .field label{
+  color: #785326;
+  font-weight: 600;
+  font-size: 0.75rem!important;
+  
+ }
+
+
+ .field input{
+  border-radius: 5px;
+  height: 2rem;
+  color: #f7a644;
+  font-weight: 600;
+  font-size: 0.75rem!important;
+  line-height: 0.75rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  border: 1px solid #8e7a62;
+ }
+
+
+
+ .field input::placeholder{
+    color: #8e7a62;
+ }
+.field input:focus{
+  border: 2px solid #f7a644;
+  outline: none !important;
+}
+
+ 
+ .field select{
+  border-radius: 5px;
+  height: 2rem;
+  color: #f7a644;
+  font-weight: 600;
+  font-size: 0.75rem!important;
+  line-height: 0.75rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  border: 1px solid #8e7a62;
+ }
+.field select:focus{
+  border: 2px solid #f7a644;
+  outline: none !important;
+}
+.btn-custom{
+  background-color: #f7a644;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  
+  
+}
+.btn-custom-transparent{
+  background-color: transparent !important;
+  color: #f7a644;
+  border: 1px solid #f7a644;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  
+  
+}
+.checkbox-cus{
+  margin-top: 0.5rem;
+
+}
+.checkbox-cus input {
+  height: 0.75rem;
+}
+
+.checkbox-cus label {
+ font-size: 0.75rem!important;
+ margin-left: 0.1rem
+}
+.form-login a{
+   margin-top: 0.25rem;
+  font-size: 0.75rem;
+  text-decoration: none!important;
+  color: #f7a644!important;
+  font-style: italic;
+
+}
+.img-button{
+  border: 2px solid #d4d3d3;
+  border-radius: 50%;
+  background: transparent ;
+  padding: 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 0.25rem;
+}
+
+
+
+/* css for register screen  */
+
+
+.register{
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  height: 30rem !important;
+  border: 1px solid #d9d9d9;
+  margin-top: 6rem;
+  width: 50rem;
+  background-color: white;
+
+}
+
+.register .right{
+  background:url("../public/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 20rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.register .left{
+
+  height: 100%;
+  width: 30rem;
+  padding: 2rem 4rem; 
+   text-align: left!important;
+  color: #785326;
+
+}
+.form-register{
+  height: 24rem;
+  padding-right: 1rem;
+}
+.form-register::-webkit-scrollbar {
+  width: 4px;
+ 
+}
+
+.form-register::-webkit-scrollbar-track {
+  background-color: transparent;
+} 
+
+.form-register::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 0.25rem;
+}
+
+.form-register::-webkit-scrollbar-thumb:hover {
+  background-color: #f7a644;
+}
+.bg-qr-code{
+  height: 15rem;
+  width: 15rem;
+  border: 0.25px solid #d9d9d9;
+}
+
+.bg-qr-code img{
+  padding:1rem
+} 
+/* css when scrolling the middle mouse */
+.form-register.scrolling::-webkit-scrollbar-thumb {
+  background-color: #f7a644;
+}
+
+
+ .form-register .field{
+  margin-top: 0.5rem!important;
+ }
+ /* css forr Home screen  */
+
+ .searchbar{
+  position: relative !important;
+ }
+ .searchbar input{
+  width: 100%;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #d9d9d9;
+ }
+
+ .icon-search{
+  position: absolute;
+  top:0.25rem;
+  right: 1rem;
+ }
+ .icon-search svg{
+  font-size: 1.25rem;
+ }
+
+ .searchbar input:focus{ 
+  outline: none;
+  border-color: #f7a644;
+  transition: 0.5s ease-in;
+
+ }
+.icon-clean{
+  position: absolute;
+  top:0.25rem;
+  right: 1rem;
+ }
+ .hidden {
+  transition: 0.5s ease-in!important;
+  display: none!important;
+ }
+ .Register .btn-custom:last-child{
+
+    background-color: transparent !important;
+    color: #f7a644;
+    border: 1px solid #f7a644;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+
+ }
+
+
+ /* css tab view  */
+ 
+ .react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+
+  margin: 0 0 10px;
+  padding: 0;
+}
+.react-tabs__tab:first-child{
+  padding-left :0!important;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #d4d3d3;
+  margin: 0 1.5rem 0 0;
+}
+
+.react-tabs__tab--selected {
+  color: #2400c7;
+
+  transition: 0.75s linear;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+}
+
+.react-tabs__tab:focus:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.sub-list-user{
+
+  list-style: none;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 20px -6px #777;
+      border-radius: 0.25rem;
+
+
+}
+.sub-list-user li{
+
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  font-size: 0.75rem;
+  background-color: #f0efef;
+  margin-bottom: 0.5rem;
+
+}
+.sub-list-user li:hover{
+
+    cursor: pointer;
+    color: #2400c7;
+}
+
+.sub-list-user li svg{
+  margin-top: -3px;
+}
+.settings-tag:hover .sub-list-user{
+    display: block;
+
+}
+
+/*  */
+.sub-list-settings{
+
+  list-style: none;
+
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 20px -6px #777;
+  border-radius: 0.25rem;
+
+
+}
+.sub-list-settings li{
+
+  padding: 0.5rem 1rem;
+  width: 9rem;
+  font-size: 0.75rem;
+  background-color: #f0efef;
+  margin-bottom: 0.5rem;
+
+}
+.sub-list-settings li:hover{
+
+    cursor: pointer;
+    color: #2400c7;
+}
+
+.sub-list-settings li svg{
+  margin-top: -3px;
+}
+.user-tag:hover .sub-list-settings{
+    display: block;
+
+}
+
+.modal-mfa-enable .modal-dialog {
+    transform: translate(0, 100%)!important;
+    transition: transform 0.5s ease-out!important;
+}
+
+.digit-input .input-custom{
+  padding: 0.25rem 1.5rem;
+   font-size: 1rem;
+   border: 1px solid #d9d9d9;
+   border-radius: 0.25rem;
+
+
+}
+.digit-input svg{
+  top:0.5rem;
+  left: 0.25rem;
+ 
+}
+.digit-input .input-custom:focus{
+  outline: none !important;
+  transition: 0.5s ease-in;
+  border-color: #f7a644;
+}
+/* css reset passwords screen  */
+.ResetPwd{
+  width: 24rem;
+  height: 28rem;
+  border: 2px solid #e9e9e9;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin-top: 6rem;
+}
+.ResetPwd .content  li {
+  font-size: 0.75rem!important;
+}
+.ResetPwd .content span{
+  font-size: 0.75!important;
+  font-weight: bold;
+}
+
+/* css change Email screen  */
+.ChangeEmail{
+  width: 24rem;
+  height: 28rem;
+  border: 2px solid #e9e9e9;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin-top: 6rem;
+}
+.ChangeEmail .content  li {
+  font-size: 0.75rem!important;
+}
+.ChangeEmail .content span{
+  font-size: 0.75!important;
+  font-weight: bold;
+}
+.title-modal{
+  font-size: 1rem!important;
+  font-weight: bold !important;
 }
